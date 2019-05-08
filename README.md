@@ -13,10 +13,12 @@
 index = np.random.permutation(20000)     #猫加狗一共20000
 ~~~
 但问题是：在保证分类标签不变的情况下如何将猫与狗之间相互交叉  
-即如何在猫放在一个文件夹  狗放在一个文件夹的   情况下将猫狗穿插训练
+即如何在猫放在一个文件夹  狗放在一个文件夹的   情况下将猫狗穿插训练  
+
 2.在最后增加全连接层以及增加BatchNormalization
 
-model.add(layers.BatchNormalization())
+model.add(layers.BatchNormalization())   
 
-BN一般添加在conv2D之后 和 Dense层之后 用于。。。没完全理解透
-这是这里的详细解释[batchnormalization](https://www.cnblogs.com/guoyaohua/p/8724433.html)
+BN一般添加在conv2D之后 和 Dense层之后 用于。。。没完全理解透  
+
+这里是BN的详细解释[batchnormalization](https://www.cnblogs.com/guoyaohua/p/8724433.html)
